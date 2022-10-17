@@ -1,0 +1,1108 @@
+@charset "UTF-8";
+/* GENERALES */
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+
+html {
+    height: 100%; 
+}
+
+body {
+    min-height: 100%; 
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    color: #404040; 
+}
+
+/* MENÚ */
+
+header{
+    background-color: #f6f2ec;
+    width: 100%;
+}
+
+.menu__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2%;
+}
+
+.menu__container a{
+    width: 300px;
+}
+
+.logo{
+    width: 40%;
+}
+
+.menu__container ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 25px;
+    font-size: 12px;
+}
+
+li a{
+    text-decoration: none;  
+    padding: 30px; 
+    text-align: left;
+    color: #404040;
+    font-size: 15px;
+}
+
+li a:hover{
+    color: #faad4e;
+}
+
+.active{
+    color: #faad4e;
+}
+
+#hamb, #menu-check{
+    display: none;
+}
+
+
+/* SLIDER */
+
+.slide-container{
+    max-width:100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.mySlider img{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+    vertical-align: top;
+    transition: 2s;
+}
+
+.arrows{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.arrows a{
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.arrows a:hover{
+    background: rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+.bars{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom:15px;
+}
+
+.bar{
+    cursor: pointer;
+    height:2px;
+    width: 25px;
+    margin: 0 2px;
+    background: #dcdde1;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.bars .active{
+    background-color: #faad4e;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;    
+}
+
+@keyframes fade {
+    from {opacity: .4;}
+    to{opacity:1;}
+}
+
+.atras, .adelante{
+    cursor: pointer;
+}
+
+/* MAIN */
+
+.mainTitle{
+    text-align: center;
+    font-size: 29px;
+    margin-top: 5%;
+    color: #404040;
+}
+
+.secondaryTitle{
+    font-family: 'Ms Madi', cursive;
+    text-align: center;
+    color: #99b1bf;
+    font-size: 83px;
+    margin-top: -3%;
+}
+
+/* CARDS */
+
+.container__all{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box{
+    width: 250px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.box .icon, 
+.box h4, 
+.box p{
+    position: relative;
+    z-index: 1;
+    transition: all 300ms;
+}
+
+.box .icon{
+    font-size: 33px;
+    color: #faad4e;
+}
+
+.icon {
+    transform: translateY(50px);
+}
+
+.box:hover i{
+    color: #ffffff;
+}
+
+.box:hover .icon {
+    transform: translateY(-5px);
+}
+
+.box h4{
+    color: #404040;
+    font-size: 23px;
+    transform: translateY(60px);
+}
+
+.box:hover h4{
+    color: #ffffff;
+    transform: translateY(5px);
+}
+
+.box p{
+    color: #ffffff;
+    font-size: 13px;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.box:hover p{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.container__box a{
+    text-decoration: none;
+}
+
+.box .backgroundbox__hover{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    background-color: #faad4e;
+    border-radius: 100%;
+    transition: all 300ms;
+}
+
+.box:hover .backgroundbox__hover{
+    width: 400px;
+    height: 400px;
+    top: -70px;
+    left: -70px;
+}
+
+/* ADOPTIONS */
+
+.slider__adoptions{
+    background-color: #99b1bf;
+    height: 950px;
+}
+
+.adoptions__title{
+    text-align: center;
+    font-size: 29px;
+    color: #ffffff;
+}
+
+h3.adoptions__title{
+    padding-top: 3%;
+}
+
+.adoptions__secondaryTitle{
+    font-family: 'Ms Madi', cursive;
+    text-align: center;
+    color: #ffffff;
+    font-size: 83px;
+    margin-top: -3%;
+}
+
+h3.adoptions__secondaryTitle{
+    padding-bottom: 3%;
+}
+
+.slider__adoptions img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.slide-contenedor{
+    max-width:100%;
+    height:auto;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.miSlider img{
+    width: 100%;
+    max-height: 100vh;
+    height: inherit;
+    object-fit: cover;
+    vertical-align: top;
+    transition: 2s;
+}
+
+.direcciones{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.direcciones a{
+    color: #fff;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.direcciones a:hover{
+    background: rgba(0, 0, 0, .5);
+    transition: .5s;
+}
+
+.barras{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom:15px;
+}
+
+.barra{
+    cursor: pointer;
+    height:2px;
+    width: 25px;
+    margin: 0 2px;
+    background: #dcdde1;
+    display: inline-block;
+    margin-left: 3px;
+}
+
+.barras .active{
+    background-color: #faad4e;
+}
+
+/* FOOTER */
+
+footer{
+    margin: 3% 0;
+}
+
+.thirdTitle{
+    font-family: 'Ms Madi', cursive;
+    text-align: center;
+    color: #99b1bf;
+    font-size: 63px;
+}
+
+.footer__icons{
+    font-size: 33px;
+    text-align: center;
+    height: 85px;
+}
+
+.footer__icons i{
+    margin: 0 1%;
+}
+
+.footer__icons a {
+    color: #faad4e;
+}
+
+.footer__icons a:hover {
+    color: #99b1bf;
+}
+
+/* NOSOTROS */
+
+.container__us{
+    width: 100%;
+}
+
+.container__us img{
+    max-width: 100%;
+}
+
+.us__text{
+    width: 1100px;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.us__text p{
+    text-align: center;
+}
+
+.donate{
+    background-color: #99b1bf;
+    height: 123px;
+}
+
+.donate p{
+    text-align: center;
+    font-size: 29px;
+    color: #ffffff;
+}
+
+.accent{
+    font-family: 'Ms Madi', cursive;
+    text-align: center;
+    color: #ffffff;
+    font-size: 73px;
+}
+
+
+/* PÁGINA CONTACTO */
+
+.formulario
+{
+    margin-top: 8%;
+}
+
+.formulario h1{
+    font-size: 43px;
+}
+
+.formulario h3 {
+    font-size: 63px;
+} 
+
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color: #404040;
+    padding-left: 2%; 
+}
+
+form {
+    margin: 0 auto;
+    width: 600px;
+    padding: 2px;
+    margin-top: 3%;
+    margin-bottom: 10%; 
+}
+
+form label {
+    display: block;
+    padding: 11px 0px; 
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px 0px;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 2%; 
+}
+
+input:focus, textarea:focus {
+    background-color: #99b1bf;
+    color: #ffffff;
+    transition: all 1s;
+    outline: none; 
+}
+
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    border: 1px solid #e8e8e8;
+    padding: 8px;
+    padding-left: 11px;
+    margin-bottom: 2%;
+    font-family: 'Poppins', sans-serif;
+    color: #404040;
+    font-size: 13px;
+    font-weight: 500;
+    outline: none; 
+}
+
+input[type=text]:nth-child(1), input[type=email]:nth-child(2){
+    padding-left: 9px;
+}
+
+textarea{
+    padding-left: 9px;
+}
+
+input.boton__form{
+    background-color: #faad4e;
+    color: #ffffff;
+}
+
+input.boton__form:hover{
+    background-color: #99b1bf;
+    color: #ffffff;
+}
+
+.map{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.visit{
+    background-color: #99b1bf;
+    padding: 3%;
+}
+
+.visit h2 {
+    text-align: center;
+    font-size: 29px;
+    color: #ffffff;
+}
+
+.visit h3 {
+    font-family: 'Ms Madi', cursive;
+    text-align: center;
+    color: #ffffff;
+    font-size: 83px;
+    margin-top: -3%;
+}
+
+
+/* PÁGINA ADOPCIÓN */
+
+.card__container {
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 5% auto;
+}
+
+.card__adoptions{
+    width: 300px;
+}
+
+.card__adoptions img{
+    width: 100%;
+}
+
+.card__adoptions h2{
+    color: #99b1bf;
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.card__adoptions p{
+    color: #404040;
+    font-size: 13px;
+    text-align: center;
+}
+
+.card__description{
+    margin-top: 7%;
+}
+
+.button{
+    background-color: #faad4e;
+    text-align: center;
+    padding: 3%;
+    border-radius: 10px;
+    margin: 8% 10%;
+}
+
+.button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.button:hover{
+    background-color: #99b1bf;
+}
+
+/* PÁGINA AYUDAR */
+
+/* TRANSIT */
+
+.transit{
+    background-color: #99b1bf;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.transit__img{
+    width: 400px;
+}
+
+.transit__text{
+    width: 400px;
+    margin-left: 9%;
+}
+
+.transit__text p{
+    margin-bottom: 9%;
+}
+
+.transit__text h3{
+    font-size: 21px;
+}
+
+.transit a{
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 3%;
+    border-radius: 11px;
+}
+
+.transit a:hover{
+    background-color: #faad4e;
+    border: 0;
+}
+
+/* ADOPTIONS */
+
+.adoption{
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.adoption__img {
+    width: 400px;
+}
+
+.adoption__text{
+    width: 400px;
+    margin-left: 9%;
+}
+
+.adoption__text p{
+    margin-bottom: 9%;
+}
+
+.adoption__text h3{
+    font-size: 21px;
+}
+
+.adoption a{
+    text-decoration: none;
+    color: #99b1bf;
+    border: 1px solid #99b1bf;
+    padding: 3%;
+    border-radius: 11px;
+}
+
+.adoption a:hover{
+    background-color: #faad4e;
+    color: #404040;
+    border: 0;
+}
+
+/* DONATE */
+
+.donate__text{
+    width: 450px;
+    margin-left: 9%;
+}
+
+.donate__text h3{
+    font-size: 21px;
+}
+
+.ml_buttons{
+    margin-top: 7%;
+}
+
+.donate__text > h2 > i{
+    font-size: 23px;
+}
+
+.pagos{
+    padding: 2%;
+    border: none;
+    border-radius: 9px;
+    background-color: #faad4e;
+    color: #ffffff;
+}
+
+.pagos:hover{
+    background-color: #99b1bf;
+}
+
+/* ALERT */
+
+.swal2-styled.swal2-confirm {
+    background-color: #faad4e;
+}
+
+.swal2-styled.swal2-confirm:focus {
+    box-shadow: 0 0 0 0px rgb(112 102 224 / 50%);
+}
+
+.swal2-icon.swal2-error [class^=swal2-x-mark-line] {
+    background-color: #faad4e;
+}
+
+.swal2-icon.swal2-error {
+    border-color: #faad4e;
+    color: #faad4e;
+}
+
+.swal2-icon.swal2-success .swal2-success-ring {
+    border: 0.25em solid #99b1bf;
+}
+
+.swal2-icon.swal2-success {
+    border-color: #99b1bf;
+    color: #99b1bf;
+}
+
+.swal2-icon.swal2-success [class^=swal2-success-line] {
+    background-color: #99b1bf;
+}
+
+/******** TABLET ********/
+@media only screen and (max-width: 768px) {
+
+    .menu__container {
+        padding: 18px 2%;
+    }
+
+    .container__all {
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .slider__adoptions {
+        height: 600px;
+    }
+
+    /* NOSOTROS */
+
+    .us__text {
+        width: 600px;
+    }
+
+    /* ADOPCIÓN */
+
+    .card__container {
+        max-width: 700px;
+    }
+
+    /* AYUDAR */
+    
+    .transit {
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .transit__img {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .transit__text {
+        width: 500px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    .adoption {
+        flex-direction: column;
+        height: 800px;
+    }
+
+    .adoption__img {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adoption__text {
+        width: 500px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 3%;
+    }
+
+    /* CONTACTO */
+    
+    .formulario h3 {
+        font-size: 59px;
+    }
+
+
+    .secondaryTitle {
+        font-size: 67px;
+    }
+
+    .donate__text{
+        width: 500px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 3%;
+    }
+}
+
+/******** MOBILE ********/
+@media only screen and (max-width: 600px) {
+
+    /* PÁGINA HOME */
+
+    /* MENÚ */
+
+    .logo {
+        width: 27%;
+        margin-left: 5%;
+    }
+
+    .menu__container {
+        padding: 0;
+    }
+
+    #hamb{
+        display: block;
+        color: #faad4e;
+        font-size: 1.2em;
+        border: 2px solid #faad4e;
+        border-radius: 0.3em;
+        position: absolute;
+        right: 0.5em;
+        padding: 1%;
+        margin-right: 3%;
+        z-index: 9000;
+        width: 39px;
+        text-align: center;
+    }
+
+    #menu-cerrar{
+        display: none;
+    }
+    
+    #menu-check:checked ~ label #menu-abrir{
+        display: none;
+    }
+    
+    #menu-check:checked ~ label #menu-cerrar{
+        display: block;
+    }
+    
+    #menu-check:not(:checked) ~ nav{
+        display: none;
+    }
+    
+    #menu-check:checked ~ nav{
+        display: block;
+    }
+
+    .slide-container{
+        z-index: -1;
+    }
+
+    nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #404040;
+        opacity: 0.8;
+        padding-top: 0.5em;
+        padding-right: 1.5em;
+        color: #ffffff;
+        z-index: 5;
+    }
+
+    nav a{
+        color: #ffffff;
+        font-size: 1.5em;
+    }
+
+    nav ul, nav ul li{
+        display: block !important;
+        text-align: right;
+    }
+
+    .menu__container ul {
+        margin: 31px 11px;
+    }
+
+      /* TÍTULO */
+    
+    .mainTitle {
+        font-size: 18px;
+        margin-top: 9%;
+    }
+
+    .secondaryTitle {
+        font-size: 51px;
+        margin-top: -5%;
+        line-height: 33px;
+        margin-bottom: 7%;
+    }
+
+     /* SLIDERS */
+    
+    div.bars{
+        display: none;
+    }
+
+     /* CARDS */
+    
+    .container__all {
+        max-width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .box .icon {
+        top: 20px;
+    }
+
+    .box h4 {
+        top: 20px;
+    }
+
+    /* TÍTULO ADOPCIONES */
+
+    .adoptions__title {
+        font-size: 18px;
+    }
+
+    .adoptions__secondaryTitle {
+        font-size: 51px;
+        margin-top: -7%;
+    }
+
+    .slider__adoptions {
+        height: 350px;
+    }
+
+ /* FOOTER */
+
+    .thirdTitle {
+        font-size: 53px;
+    }
+
+    .footer__icons {
+        font-size: 27px;
+        height: 65px;
+    }
+
+    /* PÁGINA NOSOTROS */
+
+    .us__text {
+        width: 350px;
+    }
+
+    .donate p {
+        font-size: 18px;
+    }
+
+    .accent {
+        font-size: 53px;
+    }
+
+    .donate {
+        height: 89px;
+    }
+
+    /* PÁGINA ADOPCIÓN */
+
+    .card__container {
+        width: 400px;
+        flex-direction: column;
+    }
+
+    /* PÁGINA AYUDAR */
+
+    .transit {
+        flex-direction: column;
+        height: 600px;
+    }
+
+    .transit__img {
+        width: 300px;
+    }
+
+    .transit__text {
+        width: 300px;
+    }
+
+    .transit__text h3 {
+        font-size: 18px;
+    }
+
+    .transit__text p {
+        font-size: 14px;
+    }
+
+    .adoption {
+        height: 600px;
+    }
+
+    .adoption__img{
+        width: 300px;
+    }
+
+    .adoption__text {
+        width: 300px;
+    }
+
+    .adoption__text h3 {
+        font-size: 18px;
+    }
+
+    .adoption__text p {
+        font-size: 14px;
+    }
+
+    /* PÁGINA PAGOS */
+
+    .donate__text h3{
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    hr{
+        width: 350px;
+        margin: 3% auto;
+    }
+
+    .donate__text {
+        width: 400px;
+    }
+
+    .pagos {
+        display: block;
+        width: 70%;
+        margin: 3% auto;
+    }
+
+    /* PÁGINA CONTACTO */
+
+    .formulario h1 {
+        font-size: 25px;
+    }
+
+    .formulario h3 {
+        width: 350px;
+        font-size: 43px;
+        line-height: 26px;
+        margin: 0 auto;
+        margin-top: -5%;
+        margin-bottom: 7%;
+    }
+
+    form {
+        width: 350px;
+    }
+
+    .map {
+        max-width: 350px;
+    }
+
+    .visit h2 {
+        font-size: 18px;
+    }
+
+    .visit h3 {
+        font-size: 53px;
+        margin-top: -7%;
+    }
+
+    .visit {
+        padding: 8%;
+    }
+
+}

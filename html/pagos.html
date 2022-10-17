@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una mano, una pata feliz es una asociación civil sin fines de lucro abocada a difundir, proteger y promover los derechos de los animales.">
+    <meta name="keywords" content="ONG, ONG perritos, adopciones, adopción perros, adopción perritos, adopcion, organización sin fines de lucro, animales">
+    <script src="https://kit.fontawesome.com/35dbebc5d1.js" crossorigin="anonymous"></script> <!-- ÍCONOS FONTAWESOME -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> <!-- BOOTSTRAP --> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- ANIMACIONES AOS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet"> <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet"> <!-- FONT -->
+    <link rel="shortcut icon" href="../images/logo.png"> <!-- FAVICON -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css"> <!-- CSS --> 
+    <title>Una mano, una pata feliz</title>
+</head>
+<body>
+    <header>
+        <div class="menu__container">
+            <a href="../index.html"><img class="logo" src="../images/logo.png" alt="Logo una mano, una pata feliz"></a>
+            <input type="checkbox" id="menu-check">
+            <label id="hamb" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>
+            <nav id="menu">
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="adopcion.html">ADOPCIÓN</a></li>
+                    <li><a class="active" href="#">AYUDAR</a></li>
+                    <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1 class="mainTitle">ELIGE TU MÉTODO DE PAGO</h1>
+        <h2 class="secondaryTitle">y salvemos más vidas</h2>
+        <div class="transit">
+            <div class="transit__img">
+                <img src="../images/transito.png" alt="Hogar de tránsito">
+            </div>
+            <div class="donate__text">
+                <h2>TRANSFERENCIAS</h2>
+                <h3>Datos Bancarios</h3>
+                <hr>
+                <p> Banco Provincia</p>
+                <p>Asociación Civil Proyecto 4 Patas</p>
+                <p>Cuenta Corriente en pesos Nº 00000/0</p>
+                <p>CBU: 0000000000000000000000</p>
+                <p>CUIT: 00-00000000-0</p>
+                <p>Alias: MANO-PATA-FELIZ </p>
+            </div>
+        </div>
+        <div class="adoption">
+            <div class="adoption__img">
+                <img src="../images/dona.png" alt="Donar">
+            </div>
+            <div class="donate__text">
+                <h2>MERCADO LIBRE</h2>
+                <h3>Elige la opción que más se adecúe a tus posibilidades</h3>
+                <div class="ml_buttons">
+                    <button class="pagos" onclick="pagar(200)">DONAR $200</button>
+                    <button class="pagos" onclick="pagar(500)">DONAR $500</button>
+                    <button class="pagos" onclick="pagar(1000)">DONAR $1.000</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3 class="thirdTitle">contactanos</h3>
+        <div class="footer__icons">
+            <a href="https://api.whatsapp.com/send?phone=+542216130884&text=Hola!%20ingres%C3%A9%20a%20la%20web%20de%20una%20mano,%20una%20pata%20feliz." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:gianina.soloa@hotmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+<script src="../js/pago.js"></script> <!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> <!-- BOOTSTRAP -->
+</html>

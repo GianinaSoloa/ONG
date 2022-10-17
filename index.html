@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Una mano, una pata feliz es una asociación civil sin fines de lucro abocada a difundir, proteger y promover los derechos de los animales.">
+    <meta name="keywords" content="ONG, ONG perritos, adopciones, adopción perros, adopción perritos, adopcion, organización sin fines de lucro, animales">
+    <script src="https://kit.fontawesome.com/35dbebc5d1.js" crossorigin="anonymous"></script> <!-- ÍCONOS FONTAWESOME -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> <!-- BOOTSTRAP --> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- ANIMACIONES AOS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600&display=swap" rel="stylesheet"> <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet"> <!-- FONT -->
+    <link rel="shortcut icon" href="/images/logo.png"> <!-- FAVICON -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- CSS --> 
+    <title>Una mano, una pata feliz</title>
+</head>
+<body>
+    <header>
+        <div class="menu__container">
+            <a href="index.html"><img class="logo" src="images/logo.png" alt="Logo una mano, una pata feliz"></a>
+            <input type="checkbox" id="menu-check">
+            <label id="hamb" for="menu-check">
+                <span id="menu-abrir">&#9776;</span>
+                <span id="menu-cerrar">X</span>
+            </label>
+            <nav id="menu">
+                <ul>
+                    <li><a class="active" href="index.html">INICIO</a></li>
+                    <li><a href="html/nosotros.html">NOSOTROS</a></li>
+                    <li><a href="html/adopcion.html">ADOPCIÓN</a></li>
+                    <li><a href="html/ayudar.html">AYUDAR</a></li>
+                    <li><a href="html/contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="slide-container">
+            <div class="mySlider">
+                <img src="images/banner-1.png" alt="Hay veces que las palabras sobran cuando vemos a nuestras patitas.">
+            </div>
+            <div class="mySlider">
+                <a href="html/ayudar.html"><img src="images/banner-2.png" alt="Quiero ayudar a la asociación."></a>
+            </div>
+            <div class="mySlider">
+                <a href="html/adopcion.html"><img src="images/banner-3.png" alt="Quiero adoptar una patita."></a>
+            </div>
+            <div class="arrows">
+                <a href="#" class="atras" onclick="positionSlide(-1)">&#10094;</a>
+                <a href="#" class="adelante" onclick="nextSlide(1)">&#10095;</a>
+            </div>
+            <div class="bars">
+                <span class="bar active" onclick="positionSlide(1)"></span>
+                <span class="bar" onclick="positionSlide(2)"></span>
+                <span class="bar" onclick="positionSlide(3)"></span>
+            </div>
+        </div>
+        <h1 class="mainTitle">GRACIAS A TU AYUDA PODEMOS SEGUIR</h1>
+        <h2 class="secondaryTitle">salvando vidas</h2>
+        <div class="container__all">
+            <div class="container__box">
+                <a href="html/ayudar.html">
+                    <div class="box">
+                        <i class="fa-solid fa-house icon"></i>
+                        <h4>SÉ TRÁNSITO</h4>
+                        <p>Tal vez no puedas adoptar un animal de compañía de forma definitiva o no te animes todavía, pero sí brindarle un lugar por un período de tiempo hasta su adopción definitiva.</p>
+                        <p>SABER MÁS</p>
+                        <div class="backgroundbox__hover"></div>
+                    </div>
+                </a>    
+            </div> 
+            <div class="container__box">
+                <a href="html/adopcion.html">
+                    <div class="box">
+                        <i class="fa-solid fa-heart icon"></i>
+                        <h4>ADOPTÁ</h4>
+                        <p>Adoptando estás salvando la vida de un animal rescatado. Cada perro adoptado deja su lugar para que ingrese otro. Adoptar es un acto de amor y de responsabilidad.</p>
+                        <p>SABER MÁS</p>
+                        <div class="backgroundbox__hover"></div>
+                    </div>
+                </a>    
+            </div> 
+            <div class="container__box">
+                <a href="html/ayudar.html">
+                    <div class="box">
+                        <i class="fa-solid fa-hand-holding-dollar icon"></i>
+                        <h4>DONÁ</h4>
+                        <p>Cada aporte por más pequeño que sea, significa mucho para ellos. Hacé clic y enterate de todas las formas en las que podés colaborar con nuestras patitas y hacerlos felices.</p>
+                        <p>SABER MÁS</p>
+                        <div class="backgroundbox__hover"></div>
+                    </div>
+                </a>    
+            </div> 
+        </div>
+        <div class="slider__adoptions">
+            <h3 class="adoptions__title">ADOPCIONES</h3>
+            <h3 class="adoptions__secondaryTitle">patitas felices</h3>
+            <div class="slide-contenedor">
+                <div class="miSlider">
+                    <img src="images/adoptions-1.png" alt="">
+                </div>
+                <div class="miSlider">
+                    <img src="images/adoptions-2.png" alt="">
+                </div>
+                <div class="miSlider">
+                    <img src="images/adoptions-3.png" alt="">
+                </div>
+                <div class="direcciones">
+                    <a class="atras" onclick="avanzaSlide(-1)">&#10094;</a>
+                    <a class="adelante" onclick="avanzaSlide(1)">&#10095;</a>
+                </div>
+                <div class="barras">
+                    <span class="barra active" onclick="posicionSlide(1)"></span>
+                    <span class="barra" onclick="posicionSlide(2)"></span>
+                    <span class="barra" onclick="posicionSlide(3)"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4 class="thirdTitle">contactanos</h4>
+        <div class="footer__icons">
+            <a href="https://api.whatsapp.com/send?phone=+542216130884&text=Hola!%20ingres%C3%A9%20a%20la%20web%20de%20una%20mano,%20una%20pata%20feliz." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:gianina.soloa@hotmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+<script src="js/sliders.js"></script> <!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> <!-- BOOTSTRAP -->
+</html>
