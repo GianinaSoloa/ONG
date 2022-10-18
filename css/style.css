@@ -885,9 +885,6 @@ input.boton__form:hover{
         display: block;
     }
 
-    .slide-container{
-        z-index: -1;
-    }
 
     nav{
         position: absolute;
@@ -896,7 +893,7 @@ input.boton__form:hover{
         height: 100%;
         width: 100%;
         background-color: #404040;
-        opacity: 0.8;
+        opacity: 0.9;
         padding-top: 0.5em;
         padding-right: 1.5em;
         color: #ffffff;
@@ -911,10 +908,11 @@ input.boton__form:hover{
     nav ul, nav ul li{
         display: block !important;
         text-align: right;
+        padding: 7px;
     }
 
     .menu__container ul {
-        margin: 31px 11px;
+        margin: 37px 19px;
     }
 
       /* TÍTULO */
