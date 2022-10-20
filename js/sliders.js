@@ -16,7 +16,6 @@ setInterval(function time(){
 function showSlides(n){
     let i;
     let slides = document.getElementsByClassName('mySlider');
-    console.log(slides)
     let bars = document.getElementsByClassName('bar');
 
     if(n > 3){
@@ -35,10 +34,6 @@ function showSlides(n){
     slides[index-1].style.display = 'block';
     bars[index-1].className += ' active';
 
-}
-
-function ayudar(){
-    location.href = "html/ayudar.html"
 }
 
 let indice = 1;
